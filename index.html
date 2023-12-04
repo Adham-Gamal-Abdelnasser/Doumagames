@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games</title>
+        <!-- ! website icon -->
+        <link rel="website icon" type="png" href="assets/images/logo.png" />
+        <!-- ! bootstrap -->
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+        <!-- ! fontawesome -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- ! google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- ! main css file -->
+        <link rel="stylesheet" href="CSS/index.css" />
+    </head>
+    <body>
+        <header class="min-vh-100" id="games">
+            <div class="container pt-5">
+              <nav class="navbar navbar-expand-lg w-100 mx-auto  rounded-2 mb-5">
+                <div class="container-fluid">
+                    <div class="logo d-flex align-items-center">
+                        <div class="logoImg">
+                            <img src="assets/images/logo-sm.png" alt="website logo" class="w-100" />
+                        </div>
+                        <h2 class="fw-bold">GAME REVIEWS</h2>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav menu ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold " aria-current="page" data-category="mmorpg" href="#">mmorpg</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" aria-current="page" data-category="shooter" href="#">shooter</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" aria-current="page" data-category="sailing" href="#">sailing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" aria-current="page" data-category="permadeath" href="#">PERMADEATH</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" aria-current="page" data-category="superhero" href="#">superhero</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" aria-current="page" data-category="pixel" href="#">pixel</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+              <section class="mt-5">
+                <div class="container">
+                  <div class="row g-3" id="gamesContainer">
+
+                </div>
+              </section>
+
+
+        </header>
+        <section class="details d-none p-4" id="gameDetails">
+          <div class="container">
+             <header class="hstack justify-content-between bg-transparent">
+                <h1 class="text-center h3 py-4">Details Game</h1>
+                <button class="btn-close btn-close-white" id="btnClose"></button>
+             </header>
+             <div class="row g-4" id="detailsContent">
+              
+                      
+              </div>
+          </div>
+       </section>
+        <div class="loading d-none" >
+          <span class="loader"></span>
+        </div>
+        <!-- ! bootstrap js file -->
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <!-- ! main JS file -->
+        <script src="JS/index.js" type="module"></script>
+    </body>
+</html>
